@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#E8EAF6"
     tools:context=".MainActivity">
 
 <!--    <LinearLayout-->
@@ -37,8 +38,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="08 Nov 20"
+        android:textSize="9pt"
+        android:fontFamily="monospace"
+        android:padding="15dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/centerIcon1"
         app:layout_constraintTop_toTopOf="@id/centerIcon1"/>
 
 
@@ -49,8 +53,8 @@
         android:layout_marginTop="30dp"
         android:padding="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@id/firstTV1"
-        app:layout_constraintEnd_toEndOf="@id/secondTV1"
+        app:layout_constraintStart_toEndOf="@id/firstTV1"
+        app:layout_constraintEnd_toStartOf="@id/secondTV1"
         android:src="@mipmap/ic_launcher"
         />
 
@@ -58,10 +62,160 @@
         android:id="@+id/secondTV1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/centerIcon1"
         app:layout_constraintTop_toTopOf="@id/centerIcon1"
         app:layout_constraintEnd_toEndOf="parent"
         android:ellipsize="marquee"
-        android:text="24"/>
+        android:text="22"
+        android:fontFamily="monospace"
+        android:padding="15dp"
+        android:textSize="9pt"/>
 
+    <TextView
+        android:id="@+id/firstTV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="08 Nov 20"
+        android:textSize="9pt"
+        android:fontFamily="monospace"
+        android:padding="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/centerIcon2"
+        app:layout_constraintTop_toTopOf="@id/centerIcon2"/>
+
+
+    <ImageView
+        android:id="@+id/centerIcon2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:padding="15dp"
+        app:layout_constraintBottom_toTopOf="@id/centerIcon1"
+        app:layout_constraintStart_toEndOf="@id/firstTV2"
+        app:layout_constraintEnd_toStartOf="@id/secondTV2"
+        android:src="@mipmap/ic_launcher"
+        />
+
+    <TextView
+        android:id="@+id/secondTV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/centerIcon2"
+        app:layout_constraintTop_toTopOf="@id/centerIcon2"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:ellipsize="marquee"
+        android:text="22"
+        android:fontFamily="monospace"
+        android:padding="15dp"
+        android:textSize="9pt"/>
+
+    <TextView
+        android:id="@+id/firstTV3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="08 Nov 20"
+        android:textSize="9pt"
+        android:fontFamily="monospace"
+        android:padding="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/centerIcon3"
+        app:layout_constraintTop_toTopOf="@id/centerIcon3"/>
+
+
+    <ImageView
+        android:id="@+id/centerIcon3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:padding="15dp"
+        app:layout_constraintBottom_toTopOf="@id/centerIcon2"
+        app:layout_constraintStart_toEndOf="@id/firstTV3"
+        app:layout_constraintEnd_toStartOf="@id/secondTV3"
+        android:src="@mipmap/ic_launcher"
+        />
+
+    <TextView
+        android:id="@+id/secondTV3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/centerIcon3"
+        app:layout_constraintTop_toTopOf="@id/centerIcon3"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:ellipsize="marquee"
+        android:text="22"
+        android:fontFamily="monospace"
+        android:padding="15dp"
+        android:textSize="9pt"/>
+
+    <TextView
+        android:id="@+id/firstTV4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="08 Nov 20"
+        android:textSize="9pt"
+        android:fontFamily="monospace"
+        android:padding="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/centerIcon4"
+        app:layout_constraintTop_toTopOf="@id/centerIcon4"/>
+
+
+    <ImageView
+        android:id="@+id/centerIcon4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:padding="15dp"
+        app:layout_constraintBottom_toTopOf="@id/centerIcon3"
+        app:layout_constraintStart_toEndOf="@id/firstTV4"
+        app:layout_constraintEnd_toStartOf="@id/secondTV4"
+        android:src="@mipmap/ic_launcher"
+        />
+
+    <TextView
+        android:id="@+id/secondTV4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/centerIcon4"
+        app:layout_constraintTop_toTopOf="@id/centerIcon4"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:ellipsize="marquee"
+        android:text="24"
+        android:fontFamily="monospace"
+        android:padding="15dp"
+        android:textSize="9pt"/>
+
+    <TextView
+        android:id="@+id/weatherTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/centerIcon4"
+        android:text="cloudy"
+        android:textSize="12pt"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/tempTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/weatherTV"
+        android:text="22"
+        android:textSize="24pt"
+        android:textAlignment="center"/>
+
+    <ImageView
+        android:id="@+id/topImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/tempTV"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/cityTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Bnei Brak, Israel"
+        android:textSize="12pt"
+        android:textAlignment="center"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
