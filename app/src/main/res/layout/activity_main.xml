@@ -48,13 +48,11 @@
 
     <ImageView
         android:id="@+id/centerIcon1"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:padding="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@id/firstTV1"
-        app:layout_constraintEnd_toStartOf="@id/secondTV1"
         android:src="@mipmap/ic_launcher"
         />
 
@@ -86,13 +84,11 @@
 
     <ImageView
         android:id="@+id/centerIcon2"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:padding="15dp"
         app:layout_constraintBottom_toTopOf="@id/centerIcon1"
-        app:layout_constraintStart_toEndOf="@id/firstTV2"
-        app:layout_constraintEnd_toStartOf="@id/secondTV2"
         android:src="@mipmap/ic_launcher"
         />
 
@@ -124,13 +120,11 @@
 
     <ImageView
         android:id="@+id/centerIcon3"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:padding="15dp"
         app:layout_constraintBottom_toTopOf="@id/centerIcon2"
-        app:layout_constraintStart_toEndOf="@id/firstTV3"
-        app:layout_constraintEnd_toStartOf="@id/secondTV3"
         android:src="@mipmap/ic_launcher"
         />
 
@@ -162,13 +156,11 @@
 
     <ImageView
         android:id="@+id/centerIcon4"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:padding="15dp"
         app:layout_constraintBottom_toTopOf="@id/centerIcon3"
-        app:layout_constraintStart_toEndOf="@id/firstTV4"
-        app:layout_constraintEnd_toStartOf="@id/secondTV4"
         android:src="@mipmap/ic_launcher"
         />
 
