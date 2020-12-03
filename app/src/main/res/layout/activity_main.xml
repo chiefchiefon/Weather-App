@@ -38,7 +38,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="08 Nov 20"
-        android:textSize="8dp"
+        android:textSize="9dp"
         android:fontFamily="monospace"
         android:padding="15dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -51,7 +51,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:padding="15dp"
+        android:padding="1dp"
         app:layout_constraintBottom_toBottomOf="parent"
         android:src="@mipmap/ic_launcher"
         />
@@ -67,14 +67,14 @@
         android:text="22"
         android:fontFamily="monospace"
         android:padding="15dp"
-        android:textSize="8dp"/>
+        android:textSize="9dp"/>
 
     <TextView
         android:id="@+id/firstTV2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="08 Nov 20"
-        android:textSize="8dp"
+        android:textSize="9dp"
         android:fontFamily="monospace"
         android:padding="15dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -87,7 +87,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:padding="15dp"
+        android:padding="1dp"
         app:layout_constraintBottom_toTopOf="@id/centerIcon1"
         android:src="@mipmap/ic_launcher"
         />
@@ -103,14 +103,14 @@
         android:text="22"
         android:fontFamily="monospace"
         android:padding="15dp"
-        android:textSize="8dp"/>
+        android:textSize="9dp"/>
 
     <TextView
         android:id="@+id/firstTV3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="08 Nov 20"
-        android:textSize="8dp"
+        android:textSize="9dp"
         android:fontFamily="monospace"
         android:padding="15dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -123,7 +123,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:padding="15dp"
+        android:padding="1dp"
         app:layout_constraintBottom_toTopOf="@id/centerIcon2"
         android:src="@mipmap/ic_launcher"
         />
@@ -139,14 +139,14 @@
         android:text="22"
         android:fontFamily="monospace"
         android:padding="15dp"
-        android:textSize="8dp"/>
+        android:textSize="9dp"/>
 
     <TextView
         android:id="@+id/firstTV4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="08 Nov 20"
-        android:textSize="8dp"
+        android:textSize="9dp"
         android:fontFamily="monospace"
         android:padding="15dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -159,7 +159,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:padding="15dp"
+        android:padding="1dp"
         app:layout_constraintBottom_toTopOf="@id/centerIcon3"
         android:src="@mipmap/ic_launcher"
         />
@@ -175,7 +175,7 @@
         android:text="24"
         android:fontFamily="monospace"
         android:padding="15dp"
-        android:textSize="8dp"/>
+        android:textSize="9dp"/>
 
     <TextView
         android:id="@+id/weatherTV"
@@ -206,8 +206,8 @@
         android:id="@+id/cityTV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/topImage"
         android:text="Bnei Brak, Israel"
-        android:textSize="12dp"
+        android:textSize="24dp"
         android:textAlignment="center"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
