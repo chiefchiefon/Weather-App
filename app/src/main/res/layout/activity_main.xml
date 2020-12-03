@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="08 Nov 20"
-        android:textSize="9dp"
+        android:textSize="11dp"
         android:fontFamily="monospace"
         android:padding="15dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -41,14 +41,14 @@
         android:text="22"
         android:fontFamily="monospace"
         android:padding="15dp"
-        android:textSize="9dp"/>
+        android:textSize="11dp"/>
 
     <TextView
         android:id="@+id/firstTV2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="08 Nov 20"
-        android:textSize="9dp"
+        android:textSize="11dp"
         android:fontFamily="monospace"
         android:padding="15dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -77,14 +77,14 @@
         android:text="22"
         android:fontFamily="monospace"
         android:padding="15dp"
-        android:textSize="9dp"/>
+        android:textSize="11dp"/>
 
     <TextView
         android:id="@+id/firstTV3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="08 Nov 20"
-        android:textSize="9dp"
+        android:textSize="11dp"
         android:fontFamily="monospace"
         android:padding="15dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -113,14 +113,14 @@
         android:text="22"
         android:fontFamily="monospace"
         android:padding="15dp"
-        android:textSize="9dp"/>
+        android:textSize="11dp"/>
 
     <TextView
         android:id="@+id/firstTV4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="08 Nov 20"
-        android:textSize="9dp"
+        android:textSize="11dp"
         android:fontFamily="monospace"
         android:padding="15dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -149,7 +149,7 @@
         android:text="24"
         android:fontFamily="monospace"
         android:padding="15dp"
-        android:textSize="9dp"/>
+        android:textSize="11dp"/>
 
     <TextView
         android:id="@+id/weatherTV"
