@@ -38,7 +38,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="08 Nov 20"
-        android:textSize="8pt"
+        android:textSize="8dp"
         android:fontFamily="monospace"
         android:padding="15dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -67,14 +67,14 @@
         android:text="22"
         android:fontFamily="monospace"
         android:padding="15dp"
-        android:textSize="8pt"/>
+        android:textSize="8dp"/>
 
     <TextView
         android:id="@+id/firstTV2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="08 Nov 20"
-        android:textSize="8pt"
+        android:textSize="8dp"
         android:fontFamily="monospace"
         android:padding="15dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -103,14 +103,14 @@
         android:text="22"
         android:fontFamily="monospace"
         android:padding="15dp"
-        android:textSize="8pt"/>
+        android:textSize="8dp"/>
 
     <TextView
         android:id="@+id/firstTV3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="08 Nov 20"
-        android:textSize="8pt"
+        android:textSize="8dp"
         android:fontFamily="monospace"
         android:padding="15dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -139,14 +139,14 @@
         android:text="22"
         android:fontFamily="monospace"
         android:padding="15dp"
-        android:textSize="8pt"/>
+        android:textSize="8dp"/>
 
     <TextView
         android:id="@+id/firstTV4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="08 Nov 20"
-        android:textSize="8pt"
+        android:textSize="8dp"
         android:fontFamily="monospace"
         android:padding="15dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -175,7 +175,7 @@
         android:text="24"
         android:fontFamily="monospace"
         android:padding="15dp"
-        android:textSize="8pt"/>
+        android:textSize="8dp"/>
 
     <TextView
         android:id="@+id/weatherTV"
@@ -183,23 +183,23 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@id/centerIcon4"
         android:text="cloudy"
-        android:textSize="12pt"
+        android:textSize="12dp"
         android:textAlignment="center"/>
 
     <TextView
-        android:id="@+id/tempTV"
+        android:id="@+id/temdpV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@id/weatherTV"
         android:text="22"
-        android:textSize="24pt"
+        android:textSize="24dp"
         android:textAlignment="center"/>
 
     <ImageView
         android:id="@+id/topImage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@id/tempTV"
+        app:layout_constraintBottom_toTopOf="@id/temdpV"
         android:src="@mipmap/ic_launcher"/>
 
     <TextView
@@ -208,6 +208,6 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
         android:text="Bnei Brak, Israel"
-        android:textSize="12pt"
+        android:textSize="12dp"
         android:textAlignment="center"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
