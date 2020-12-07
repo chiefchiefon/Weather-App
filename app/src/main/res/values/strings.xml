@@ -2,4 +2,7 @@
     <string name="app_name">Weather you like it or not</string>
     <string name="city_name">City \' Name</string>
     <string name="date1">08 Nov 20</string>
+    <string name="date2">09 Nov 20</string>
+    <string name="date3">10 Nov 20</string>
+    <string name="date4">11 Nov 20</string>
 </resources>
