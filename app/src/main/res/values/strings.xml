@@ -5,11 +5,17 @@
     <string name="date2">09 Nov 20</string>
     <string name="date3">10 Nov 20</string>
     <string name="date4">11 Nov 20</string>
+    <string name="celsiusTempToday" translatable="false">26</string>
     <string name="celsius_temp1" translatable="false">22</string>
     <string name="celsius_temp2" translatable="false">23</string>
     <string name="celsius_temp3" translatable="false">24</string>
     <string name="celsius_temp4" translatable="false">25</string>
 
+    <string name="weatherText">cloudy</string>
+
     <dimen name="temp_text_size">12sp</dimen>
     <dimen name="date_text_size">12sp</dimen>
+    <dimen name="today_weather_text_size">16sp</dimen>
+    <dimen name="today_temp_size">16sp</dimen>
+    <dimen name="city_name_size">24sp</dimen>
 </resources>

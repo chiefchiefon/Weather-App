@@ -28,6 +28,7 @@
         android:padding="1dp"
         app:layout_constraintBottom_toBottomOf="parent"
         android:src="@mipmap/partly_cloudy_weather"
+        android:contentDescription="@string/celsius_temp1"
         />
 
     <TextView
@@ -64,6 +65,7 @@
         android:padding="1dp"
         app:layout_constraintBottom_toTopOf="@id/centerIcon1"
         android:src="@mipmap/heavy_snow_snowy_weather_32"
+        android:contentDescription="@string/celsius_temp2"
         />
 
     <TextView
@@ -100,6 +102,7 @@
         android:padding="1dp"
         app:layout_constraintBottom_toTopOf="@id/centerIcon2"
         android:src="@mipmap/fog_forecast_weather_32"
+        android:contentDescription="@string/celsius_temp3"
         />
 
     <TextView
@@ -136,6 +139,7 @@
         android:padding="1dp"
         app:layout_constraintBottom_toTopOf="@id/centerIcon3"
         android:src="@mipmap/heavy_rain_thunder_weather__32"
+        android:contentDescription="@string/celsius_temp4"
         />
 
     <TextView
@@ -156,32 +160,38 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@id/centerIcon4"
-        android:text="cloudy"
-        android:textSize="12dp"
         android:textAlignment="center"/>
 
     <TextView
-        android:id="@+id/temdpV"
+        android:id="@+id/tempTodayTV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@id/weatherTV"
-        android:text="22"
-        android:textSize="24dp"
         android:textAlignment="center"/>
 
     <ImageView
         android:id="@+id/topImage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@id/temdpV"
-        android:src="@mipmap/weather_64"/>
+        app:layout_constraintBottom_toTopOf="@id/tempTodayTV"
+        android:src="@mipmap/weather_64"
+        android:contentDescription="@string/weatherText"/>
 
+<!--    <androidx.appcompat.widget.AppCompatImageView-->
+<!--        android:id="@+id/celsius_icon"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="@dimen/cardview_default_elevation"-->
+<!--        app:layout_constraintTop_toTopOf="@id/topImage"-->
+<!--        app:layout_constraintStart_toEndOf="@id/topImage"-->
+<!--        app:src="drawable/ic_celsius_line"-->
+<!--        />-->
     <TextView
         android:id="@+id/cityTV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@id/topImage"
         android:text="@string/city_name"
-        android:textSize="24dp"
-        android:textAlignment="center"/>
+        android:textAlignment="center"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>
