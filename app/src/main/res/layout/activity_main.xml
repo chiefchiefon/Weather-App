@@ -11,7 +11,7 @@
         android:id="@+id/firstTV1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="08 Nov 20"
+        android:text="@string/date1"
         android:textSize="11sp"
         android:fontFamily="monospace"
         android:padding="15dp"
