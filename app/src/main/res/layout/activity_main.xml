@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E8EAF6"
+    android:background="@color/design_default_color_on_primary"
     tools:context=".MainActivity">
 
     <TextView
@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/date1"
-        android:textSize="11sp"
+        android:textSize="@dimen/date_text_size"
         android:fontFamily="monospace"
         android:padding="15dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,17 +38,17 @@
         app:layout_constraintTop_toTopOf="@id/centerIcon1"
         app:layout_constraintEnd_toEndOf="parent"
         android:ellipsize="marquee"
-        android:text="22"
+        android:text="@string/celsius_temp1"
         android:fontFamily="monospace"
         android:padding="15dp"
-        android:textSize="11dp"/>
+        android:textSize="@dimen/temp_text_size"/>
 
     <TextView
         android:id="@+id/firstTV2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="08 Nov 20"
-        android:textSize="11dp"
+        android:text="@string/date2"
+        android:textSize="@dimen/date_text_size"
         android:fontFamily="monospace"
         android:padding="15dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -74,17 +74,17 @@
         app:layout_constraintTop_toTopOf="@id/centerIcon2"
         app:layout_constraintEnd_toEndOf="parent"
         android:ellipsize="marquee"
-        android:text="22"
+        android:text="@string/celsius_temp2"
         android:fontFamily="monospace"
         android:padding="15dp"
-        android:textSize="11dp"/>
+        android:textSize="@dimen/temp_text_size"/>
 
     <TextView
         android:id="@+id/firstTV3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="08 Nov 20"
-        android:textSize="11dp"
+        android:text="@string/date3"
+        android:textSize="@dimen/date_text_size"
         android:fontFamily="monospace"
         android:padding="15dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -110,17 +110,17 @@
         app:layout_constraintTop_toTopOf="@id/centerIcon3"
         app:layout_constraintEnd_toEndOf="parent"
         android:ellipsize="marquee"
-        android:text="22"
+        android:text="@string/celsius_temp3"
         android:fontFamily="monospace"
         android:padding="15dp"
-        android:textSize="11dp"/>
+        android:textSize="@dimen/temp_text_size"/>
 
     <TextView
         android:id="@+id/firstTV4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="08 Nov 20"
-        android:textSize="11dp"
+        android:text="@string/date4"
+        android:textSize="@dimen/date_text_size"
         android:fontFamily="monospace"
         android:padding="15dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -146,10 +146,10 @@
         app:layout_constraintTop_toTopOf="@id/centerIcon4"
         app:layout_constraintEnd_toEndOf="parent"
         android:ellipsize="marquee"
-        android:text="24"
+        android:text="@string/celsius_temp4"
         android:fontFamily="monospace"
         android:padding="15dp"
-        android:textSize="11dp"/>
+        android:textSize="@dimen/temp_text_size"/>
 
     <TextView
         android:id="@+id/weatherTV"
@@ -181,7 +181,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@id/topImage"
-        android:text="Bnei Brak, Israel"
+        android:text="@string/city_name"
         android:textSize="24dp"
         android:textAlignment="center"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

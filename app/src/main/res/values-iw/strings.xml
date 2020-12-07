@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">מה המזג</string>
-    <string name="city_name">שם העיר</string>
+    <string name="city_name">בני ברק, ישראל</string>
     <string name="date1">כ\"ב בחשון ה\'תשפ\"א</string>
     <string name="date2">כ\"ג בחשון ה\'תשפ\"א</string>
     <string name="date3">כ\"ד בחשון ה\'תשפ\"א</string>

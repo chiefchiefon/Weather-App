@@ -1,8 +1,15 @@
 <resources>
     <string name="app_name">Weather you like it or not</string>
-    <string name="city_name">City \' Name</string>
+    <string name="city_name">Bnei Brak, Isreal</string>
     <string name="date1">08 Nov 20</string>
     <string name="date2">09 Nov 20</string>
     <string name="date3">10 Nov 20</string>
     <string name="date4">11 Nov 20</string>
+    <string name="celsius_temp1" translatable="false">22</string>
+    <string name="celsius_temp2" translatable="false">23</string>
+    <string name="celsius_temp3" translatable="false">24</string>
+    <string name="celsius_temp4" translatable="false">25</string>
+
+    <dimen name="temp_text_size">12sp</dimen>
+    <dimen name="date_text_size">12sp</dimen>
 </resources>
