@@ -7,4 +7,11 @@
     <string name="date3">כ\"ד בחשון ה\'תשפ\"א</string>
     <string name="date4">כ\"ה בחשון ה\'תשפ\"א</string>
     <string name="weatherText">מעונן</string>
+    <string name="day3">שלישי</string>
+    <string name="day2">שני</string>
+    <string name="day1">ראשון</string>
+    <string name="day4">רביעי</string>
+    <string name="day5">חמישי</string>
+    <string name="day6">שישי</string>
+    <string name="day7">שבת</string>
 </resources>

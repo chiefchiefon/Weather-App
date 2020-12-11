@@ -4,193 +4,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/design_default_color_on_primary"
+    android:background="@color/orel"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/firstTV1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/date1"
-        android:textSize="@dimen/date_text_size"
-        android:fontFamily="monospace"
-        android:padding="15dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="@id/centerIcon1"
-        app:layout_constraintTop_toTopOf="@id/centerIcon1"/>
-
-
-    <ImageView
-        android:id="@+id/centerIcon1"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/weatherDaysList"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:padding="1dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/weatherTV"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:src="@mipmap/partly_cloudy_weather"
-        android:contentDescription="@string/celsius_temp1"
-        />
-
-    <TextView
-        android:id="@+id/secondTV1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@id/centerIcon1"
-        app:layout_constraintTop_toTopOf="@id/centerIcon1"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:ellipsize="marquee"
-        android:text="@string/celsius_temp1"
-        android:fontFamily="monospace"
-        android:padding="15dp"
-        android:textSize="@dimen/temp_text_size"/>
-
-    <TextView
-        android:id="@+id/firstTV2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/date2"
-        android:textSize="@dimen/date_text_size"
-        android:fontFamily="monospace"
-        android:padding="15dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="@id/centerIcon2"
-        app:layout_constraintTop_toTopOf="@id/centerIcon2"/>
-
-
-    <ImageView
-        android:id="@+id/centerIcon2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:padding="1dp"
-        app:layout_constraintBottom_toTopOf="@id/centerIcon1"
-        android:src="@mipmap/heavy_snow_snowy_weather_32"
-        android:contentDescription="@string/celsius_temp2"
-        />
-
-    <TextView
-        android:id="@+id/secondTV2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@id/centerIcon2"
-        app:layout_constraintTop_toTopOf="@id/centerIcon2"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:ellipsize="marquee"
-        android:text="@string/celsius_temp2"
-        android:fontFamily="monospace"
-        android:padding="15dp"
-        android:textSize="@dimen/temp_text_size"/>
-
-    <TextView
-        android:id="@+id/firstTV3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/date3"
-        android:textSize="@dimen/date_text_size"
-        android:fontFamily="monospace"
-        android:padding="15dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="@id/centerIcon3"
-        app:layout_constraintTop_toTopOf="@id/centerIcon3"/>
-
-
-    <ImageView
-        android:id="@+id/centerIcon3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:padding="1dp"
-        app:layout_constraintBottom_toTopOf="@id/centerIcon2"
-        android:src="@mipmap/fog_forecast_weather_32"
-        android:contentDescription="@string/celsius_temp3"
-        />
-
-    <TextView
-        android:id="@+id/secondTV3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@id/centerIcon3"
-        app:layout_constraintTop_toTopOf="@id/centerIcon3"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:ellipsize="marquee"
-        android:text="@string/celsius_temp3"
-        android:fontFamily="monospace"
-        android:padding="15dp"
-        android:textSize="@dimen/temp_text_size"/>
-
-    <TextView
-        android:id="@+id/firstTV4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/date4"
-        android:textSize="@dimen/date_text_size"
-        android:fontFamily="monospace"
-        android:padding="15dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="@id/centerIcon4"
-        app:layout_constraintTop_toTopOf="@id/centerIcon4"/>
-
-
-    <ImageView
-        android:id="@+id/centerIcon4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:padding="1dp"
-        app:layout_constraintBottom_toTopOf="@id/centerIcon3"
-        android:src="@mipmap/heavy_rain_thunder_weather__32"
-        android:contentDescription="@string/celsius_temp4"
-        />
-
-    <TextView
-        android:id="@+id/secondTV4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@id/centerIcon4"
-        app:layout_constraintTop_toTopOf="@id/centerIcon4"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:ellipsize="marquee"
-        android:text="@string/celsius_temp4"
-        android:fontFamily="monospace"
-        android:padding="15dp"
-        android:textSize="@dimen/temp_text_size"/>
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:layout_marginTop="30dp"/>
 
     <TextView
         android:id="@+id/weatherTV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@id/centerIcon4"
+        app:layout_constraintTop_toBottomOf="@id/tempTodayTV"
         android:textAlignment="center"/>
 
     <TextView
         android:id="@+id/tempTodayTV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@id/weatherTV"
+        app:layout_constraintTop_toBottomOf="@id/topImage"
         android:textAlignment="center"/>
 
     <ImageView
         android:id="@+id/topImage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@id/tempTodayTV"
+        app:layout_constraintTop_toBottomOf="@id/cityTV"
         android:src="@mipmap/weather_64"
         android:contentDescription="@string/weatherText"/>
 
-<!--    <androidx.appcompat.widget.AppCompatImageView-->
-<!--        android:id="@+id/celsius_icon"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginStart="@dimen/cardview_default_elevation"-->
-<!--        app:layout_constraintTop_toTopOf="@id/topImage"-->
-<!--        app:layout_constraintStart_toEndOf="@id/topImage"-->
-<!--        app:src="drawable/ic_celsius_line"-->
-<!--        />-->
     <TextView
         android:id="@+id/cityTV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@id/topImage"
+        app:layout_constraintTop_toTopOf="parent"
         android:text="@string/city_name"
         android:textAlignment="center"
         />
