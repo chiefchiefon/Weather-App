@@ -7,17 +7,22 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.github.chiefchiefon.whatherapp.R
+import java.text.DateFormat
 import java.text.SimpleDateFormat
+import java.time.LocalDate
 import java.util.*
 
 class WeatherDaysAdapter : RecyclerView.Adapter<WeatherDaysAdapter.WeatherDaysViewHolder>() {
 
+    private val today = Date()
+//    val ld = LocalDate.now().plusDays(1)
+
     var weatherDAys: List<WeatherDay> = listOf(
 
-            WeatherDay(Date(), "Sunny", "22"),
-            WeatherDay(Date(), "Cloudy", "21"),
-            WeatherDay(Date(), "Sun-cloudy", "20"),
-            WeatherDay(Date(), "Rainy", "19")
+            WeatherDay(today, "Sunny", "22"),
+            WeatherDay(today, "Cloudy", "21"),
+            WeatherDay(today, "Sun-cloudy", "20"),
+            WeatherDay(today, "Rainy", "19")
     )
 
     class WeatherDaysViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
