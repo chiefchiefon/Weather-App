@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/firstTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text = "@string/day3"
+        android:textSize="@dimen/date_text_size"
+        android:fontFamily="monospace"
+        android:padding="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/centerIcon"
+        app:layout_constraintTop_toTopOf="@id/centerIcon"/>
+
+
+    <ImageView
+        android:id="@+id/centerIcon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:padding="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:src="@mipmap/partly_cloudy_weather"
+        android:contentDescription="@string/celsius_temp1"
+        />
+
+    <TextView
+        android:id="@+id/secondTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/centerIcon"
+        app:layout_constraintTop_toTopOf="@id/centerIcon"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:ellipsize="marquee"
+        tools:text="@string/celsius_temp1"
+        android:fontFamily="monospace"
+        android:padding="15dp"
+        android:textSize="@dimen/temp_text_size"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
