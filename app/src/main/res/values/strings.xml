@@ -18,11 +18,21 @@
     <dimen name="today_weather_text_size">16sp</dimen>
     <dimen name="today_temp_size">16sp</dimen>
     <dimen name="city_name_size">24sp</dimen>
-    <string name="day3">Tuesday</string>
-    <string name="day2">Monday</string>
-    <string name="day1">Sunday</string>
-    <string name="day4">Wednesday</string>
-    <string name="day5">Thursday</string>
-    <string name="day6">Friday</string>
-    <string name="day7">Saturday</string>
+<!--    <string name="day3">Tuesday</string>-->
+<!--    <string name="day2">Monday</string>-->
+<!--    <string name="day1">Sunday</string>-->
+<!--    <string name="day4">Wednesday</string>-->
+<!--    <string name="day5">Thursday</string>-->
+<!--    <string name="day6">Friday</string>-->
+<!--    <string name="day7">Saturday</string>-->
+
+    <string-array name="days_of_week">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </string-array>
 </resources>
