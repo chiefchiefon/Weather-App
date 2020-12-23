@@ -9,7 +9,7 @@ android {
     buildToolsVersion "30.0.2"
 
     defaultConfig {
-        applicationId "com.github.chiefchiefon.whatherapp"
+        applicationId "com.github.chiefchiefon.weatherapp"
         minSdkVersion 24
         targetSdkVersion 29
         versionCode 1

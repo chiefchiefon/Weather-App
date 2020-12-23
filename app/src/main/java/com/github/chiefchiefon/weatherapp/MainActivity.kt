@@ -1,12 +1,15 @@
-package com.github.chiefchiefon.whatherapp
+package com.github.chiefchiefon.weatherapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageView
+import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
-import com.github.chiefchiefon.whatherapp.data.ClimacellApiService
-import com.github.chiefchiefon.whatherapp.data.ForecastDay
-import com.github.chiefchiefon.whatherapp.days.view.WeatherDaysAdapter
+import com.github.chiefchiefon.weatherapp.data.ClimacellApiService
+import com.github.chiefchiefon.weatherapp.data.ConditionToImage.conditionToImage
+import com.github.chiefchiefon.weatherapp.data.ForecastDay
+import com.github.chiefchiefon.weatherapp.days.view.WeatherDaysAdapter
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
 import kotlinx.serialization.json.Json
 import okhttp3.MediaType
@@ -46,6 +49,15 @@ class MainActivity : AppCompatActivity() {
         )
         forecastCall.enqueue(ForecastCallback())
     }
+
+    fun updateTodayView() {
+        weatherDaysAdapter?.weatherToday?.let {
+            findViewById<TextView>(R.id.weatherTV).setText(resources.getStringArray(R.array.days_of_week)[it.dayOfWeek - 1])
+            findViewById<TextView>(R.id.tempTodayTV).setText(it.degrees)
+            findViewById<ImageView>(R.id.topImage).setImageResource(conditionToImage(it.condition))
+        }
+
+    }
     inner class ForecastCallback: Callback<List<ForecastDay>> {
         override fun onResponse(
             call: Call<List<ForecastDay>>,
@@ -61,12 +73,14 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 weatherDays?.let {
-                    weatherDaysAdapter?.weatherDays = it
+                    weatherDaysAdapter?.weatherDays = it.drop(1)
+                    weatherDaysAdapter?.weatherToday = it[0]
+                    updateTodayView()
                     weatherDaysAdapter?.notifyDataSetChanged()
                 }
             }
             else {
-
+                Toast.makeText(this@MainActivity, response.toString(), Toast.LENGTH_LONG).show()
             }
             //Toast.makeText(this@MainActivity, response.toString(), Toast.LENGTH_LONG).show()
         }

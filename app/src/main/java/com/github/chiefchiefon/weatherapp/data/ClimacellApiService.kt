@@ -1,4 +1,4 @@
-package com.github.chiefchiefon.whatherapp.data
+package com.github.chiefchiefon.weatherapp.data
 
 /**
  * object-structures of data in retrofit2 body response

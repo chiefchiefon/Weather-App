@@ -1,4 +1,4 @@
-package com.github.chiefchiefon.whatherapp.data
+package com.github.chiefchiefon.weatherapp.data
 import kotlinx.serialization.Serializable
 import java.text.SimpleDateFormat
 import java.util.*

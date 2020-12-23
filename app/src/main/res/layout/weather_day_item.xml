@@ -9,7 +9,7 @@
         android:id="@+id/firstTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text = "@string/day3"
+        tools:text = "@tools:sample/date/day_of_week"
         android:textSize="@dimen/date_text_size"
         android:fontFamily="monospace"
         android:padding="15dp"

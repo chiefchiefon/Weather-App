@@ -1,4 +1,4 @@
-package com.github.chiefchiefon.whatherapp
+package com.github.chiefchiefon.weatherapp
 
 import org.junit.Test
 
