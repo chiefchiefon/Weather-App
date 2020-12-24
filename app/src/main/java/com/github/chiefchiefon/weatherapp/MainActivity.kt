@@ -80,13 +80,16 @@ class MainActivity : AppCompatActivity() {
                 }
             }
             else {
-                Toast.makeText(this@MainActivity, response.toString(), Toast.LENGTH_LONG).show()
+                findViewById<TextView>(R.id.statusTV).setText("Something went wrong with the receiving data from server.")
             }
             //Toast.makeText(this@MainActivity, response.toString(), Toast.LENGTH_LONG).show()
         }
 
         override fun onFailure(call: Call<List<ForecastDay>>, t: Throwable) {
-            Toast.makeText(this@MainActivity, t.message, Toast.LENGTH_LONG).show()
+            val statusTV = findViewById<TextView>(R.id.statusTV)
+            statusTV.setText("Neshama, somethi'n went wrong with the weather. Stay home'n stay safe, Kapara.")
+            statusTV.setBackgroundColor(0xFF00000)
+            //Toast.makeText(this@MainActivity, t.message, Toast.LENGTH_LONG).show()
         }
     }
 }

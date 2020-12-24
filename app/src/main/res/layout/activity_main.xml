@@ -7,14 +7,24 @@
     android:background="@color/orel"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/statusTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/teal_200"
+        android:text="status: HAKOL BESEDER"
+        />
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/weatherDaysList"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/weatherTV"
+        app:layout_constraintBottom_toTopOf="@+id/statusTV"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         android:layout_marginTop="30dp"/>
 
